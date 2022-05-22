@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Service = ({service,setPurchas}) => {
-    const{name, price,availableQuantity, minimumQuantity, description}=service;
+    const{name, price,availableQuantity, minimumQuantity, description,picture}=service;
     return (
 
-        <div class="card card-compact lg:max-w-lg bg-base-100 shadow-xl mt-5">
-        <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+        <div class="card card-compact  lg:max-w-lg bg-base-100 shadow-xl mt-5">
+        <figure><img src={picture} alt="Shoes" /></figure>
         <div class="card-body">
         
           <h2 class="card-title">Name: {name}</h2>
