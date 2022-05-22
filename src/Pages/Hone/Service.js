@@ -14,9 +14,10 @@ const Service = ({ service, setPurchas }) => {
         <h2 className='text-xl'>Minimum Quantity: {minimumQuantity}</h2>
         <p>Description: {description}</p>
         <div className="card-actions justify-center">
-          <button
+          
+            <label for="purchase-modal" 
             onClick={() => setPurchas(service)}
-            className="btn btn-primary w-48 ">Buy Now</button>
+            class="btn btn-primary w-48 ">Buy Now</label>
         </div>
       </div>
     </div>

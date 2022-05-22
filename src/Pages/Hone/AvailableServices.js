@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import Purchase from './Purchase';
 
 import Service from './Service';
 
 const AvailableServices = () => {
     const [services, setServices] = useState([]);
-
+    const [purchase,setPurchas]=useState(null);
     useEffect(() => {
         fetch('services.json')
             .then(res => res.json())
@@ -21,11 +22,11 @@ const AvailableServices = () => {
                     services.map(service => <Service
                         key={service._id}
                         service={service}
-
+                        setPurchas={setPurchas}
                     ></Service>)
                 }
             </div>
-
+                {purchase && <Purchase purchase={purchase}></Purchase>}
         </div>
     );
 };
