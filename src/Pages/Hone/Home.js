@@ -1,11 +1,17 @@
 import React from 'react';
+import AvailableServices from './AvailableServices';
+import Banner from './Banner';
+
 
 const Home = () => {
     return (
         <div>
-            <h3>this is home</h3>
+            <Banner></Banner>
+            <AvailableServices></AvailableServices>
+            
         </div>
     );
 };
+
 
 export default Home;
