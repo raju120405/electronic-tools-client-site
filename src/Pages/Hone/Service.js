@@ -25,7 +25,7 @@ const Service = ({ service, setPurchas }) => {
             onClick= {navigatePurchase}
             // 
             // {() => setPurchas(service)}
-            class="btn btn-primary w-48 ">Buy Now</label>
+            className="btn btn-primary w-48 ">Buy Now</label>
         </div>
       </div>
     </div>

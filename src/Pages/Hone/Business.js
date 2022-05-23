@@ -7,25 +7,25 @@ const Business = () => {
             <h2 className='text-xl mt-2'>TRY TO UNDERSTAND USER EXPECTATION</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-4'>
 
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <div class="card-body">
-                <i class="fa-brands fa-adversal"></i>
+            <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card-body">
+                <i className="fa-brands fa-adversal"></i>
                     <p>We Served 100+ customars</p>
 
                 </div>
                 
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <h2 class="text-center">Card title!</h2>
+            <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card-body">
+                    <h2 className="text-center">Card title!</h2>
                     <p>50+ Tools</p>
 
                 </div>
                 
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <h2 class="text-center">Card title!</h2>
+            <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card-body">
+                    <h2 className="text-center">Card title!</h2>
                     <p>33k Reviews</p>
 
                 </div>
