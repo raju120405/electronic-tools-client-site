@@ -4,6 +4,7 @@ import About from "./Pages/About/About";
 import Home from "./Pages/Hone/Home";
 import Purchase from "./Pages/Hone/Purchase";
 import Login from "./Pages/Login/Login";
+import SignUp from "./Pages/Login/SignUp";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Navbar from './Pages/Shared/Navbar';
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="login" element={<Login />} />
+        <Route path="signup" element={<SignUp/>} />
         <Route path="purchase" element={<Purchase />} />
       </Routes>
       <Footer></Footer>
