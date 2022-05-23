@@ -11,6 +11,7 @@ const AvailableServices = () => {
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
+   
 
     return (
 
