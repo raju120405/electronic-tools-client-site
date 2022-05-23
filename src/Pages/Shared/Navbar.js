@@ -6,25 +6,26 @@ import auth from '../../firebase.init';
 
 const Navbar = () => {
 
-    const [user, loading, error] = useAuthState(auth);
+    const [user] = useAuthState(auth);
     const logout = () => {
         signOut(auth);
-      };
+    };
 
     const menuItems = <>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">Review</Link></li>
-        <li><Link to="/about">Dasbord</Link></li>
+        <li><Link to="/reviews">Review</Link></li>
         <li><Link to="/purchase">Purchase</Link></li>
-        <li><Link to="/about">Blog</Link></li>
+        <li><Link to="/about">Dasbord</Link></li>
+
+        <li><Link to="/blog">Blog</Link></li>
         <li><Link to="/about">About</Link></li>
 
-      
-         
+        <button className="btn btn-link">user:  {user?.displayName}</button>
 
-        <li>{user ? <button class="btn btn-active btn-ghost" onClick={logout}>sign out</button>  :<Link to="/login">Login</Link>}</li>
 
-        
+        <li>{user ? <button className="btn btn-active btn-ghost" onClick={logout}>sign out</button> : <Link to="/login">Login</Link>}</li>
+
+
     </>
     return (
         <div className='navbar bg-base-100 sticky top-0 z-50'>
