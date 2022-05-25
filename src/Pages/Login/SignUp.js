@@ -15,6 +15,7 @@ const SignUp = () => {
     error,
   ] = useCreateUserWithEmailAndPassword(auth);
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+
   const [token] = useToken(gUser || user);
 
   const navigate =useNavigate()
@@ -26,15 +27,19 @@ const SignUp = () => {
     signInError = <p className='text-red-500'>{error?.message || gError?.message || updateError?.message}</p>
   }
   if (token) {
-    navigate('/home')
+    navigate('/home');
 
   }
+  // if (gUser || user) {
+  //   navigate('/purchase')
+
+  // }
 
   const onSubmit =async data => {
-    console.log(data);
+    // console.log(data);
     await createUserWithEmailAndPassword(data.email, data.password)
     await updateProfile({ displayName:data.name });
-    console.log('update ok')
+    // console.log('update ok')
     
   }
     return (

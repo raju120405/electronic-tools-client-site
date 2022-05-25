@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import './App.css';
 import About from "./Pages/About/About";
 import Blog from "./Pages/Blog/Blog";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 import Home from "./Pages/Hone/Home";
 import Purchase from "./Pages/Hone/Purchase";
 import Login from "./Pages/Login/Login";
@@ -23,6 +24,7 @@ function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="reviews" element={<Reviews />} />
         <Route path="signup" element={<SignUp />} />
+        <Route path="deshboard" element={<Dashboard />} />
         <Route path="purchase" element={
           <RequareAuth>
             <Purchase />
