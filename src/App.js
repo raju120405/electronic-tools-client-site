@@ -2,10 +2,10 @@ import { Routes, Route } from "react-router-dom";
 import './App.css';
 import About from "./Pages/About/About";
 import Blog from "./Pages/Blog/Blog";
-import AllUser from "./Pages/Dashboard/AllUser";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import MyAppoinment from "./Pages/Dashboard/MyAppoinment";
 import MyReview from "./Pages/Dashboard/MyReview";
+import Users from "./Pages/Dashboard/Users";
 import Home from "./Pages/Hone/Home";
 import Purchase from "./Pages/Hone/Purchase";
 import Login from "./Pages/Login/Login";
@@ -34,7 +34,8 @@ function App() {
         } >
           <Route index element={<MyAppoinment></MyAppoinment>}></Route>
           <Route path="reviews" element={<MyReview></MyReview>}></Route>
-          <Route path="alluser" element={<AllUser></AllUser>}></Route>
+          <Route path="users" element={<Users></Users>}></Route>
+          
         </Route>
         
         <Route path="purchase" element={
