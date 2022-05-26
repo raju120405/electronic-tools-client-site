@@ -16,6 +16,7 @@ import Purchase from "./Pages/Hone/Purchase";
 import Login from "./Pages/Login/Login";
 import RequareAuth from "./Pages/Login/RequareAuth";
 import SignUp from "./Pages/Login/SignUp";
+import NotFound from "./Pages/NotFound/NotFound";
 import Reviews from "./Pages/Reviews/Reviews";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Navbar from './Pages/Shared/Navbar';
@@ -51,6 +52,7 @@ function App() {
             <Purchase />
           </RequareAuth>
         } />
+         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <ToastContainer></ToastContainer>
       <Footer></Footer>
