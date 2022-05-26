@@ -6,7 +6,7 @@ const AvailableServices = () => {
     const [services, setServices] = useState([]);
     const [purchase, setPurchas] = useState(null);
     useEffect(() => {
-        fetch('http://localhost:5000/service')
+        fetch('https://dry-bayou-53377.herokuapp.com/service')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
