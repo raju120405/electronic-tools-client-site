@@ -16,6 +16,7 @@ import Purchase from "./Pages/Hone/Purchase";
 import Login from "./Pages/Login/Login";
 import RequareAuth from "./Pages/Login/RequareAuth";
 import SignUp from "./Pages/Login/SignUp";
+import MyProtfolio from "./Pages/MyProtfolio/MyProtfolio";
 import NotFound from "./Pages/NotFound/NotFound";
 import Reviews from "./Pages/Reviews/Reviews";
 import Footer from "./Pages/Shared/Footer/Footer";
@@ -29,6 +30,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="protfolio" element={<MyProtfolio />} />
         <Route path="login" element={<Login />} />
         <Route path="blog" element={<Blog />} />
         <Route path="reviews" element={<Reviews />} />

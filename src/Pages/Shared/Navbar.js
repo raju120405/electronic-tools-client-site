@@ -21,7 +21,7 @@ const Navbar = () => {
 
         }
         <li><Link to="/blog">Blog</Link></li>
-        <li><Link to="/about">About</Link></li>
+        <li><Link to="/protfolio">My Portfolio</Link></li>
 
         <button className="btn btn-link">user:  {user?.displayName}</button>
 
