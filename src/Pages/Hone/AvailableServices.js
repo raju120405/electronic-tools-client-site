@@ -1,20 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Purchase from './Purchase';
-
 import Service from './Service';
 
 const AvailableServices = () => {
     const [services, setServices] = useState([]);
-    const [purchase,setPurchas]=useState(null);
+    const [purchase, setPurchas] = useState(null);
     useEffect(() => {
         fetch('http://localhost:5000/service')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
-   
-
     return (
-
         <div>
             <h1 className='text-center text-4xl mt-4 text-primary uppercase '>Our Tools</h1>
             <h2 className='underline underline-offset-8 text-center text-xl'>Some Available Products</h2>
@@ -27,7 +23,7 @@ const AvailableServices = () => {
                     ></Service>)
                 }
             </div>
-                {purchase && <Purchase purchase={purchase}></Purchase>}
+            {purchase && <Purchase purchase={purchase}></Purchase>}
         </div>
     );
 };

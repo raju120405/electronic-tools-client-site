@@ -6,7 +6,7 @@ import Loading from '../Shared/Loading';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import useToken from '../../Hooks/UseToken';
 const SignUp = () => {
-    const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+  const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
   const { register, formState: { errors }, handleSubmit } = useForm()
   const [
     createUserWithEmailAndPassword,
@@ -18,7 +18,7 @@ const SignUp = () => {
 
   const [token] = useToken(gUser || user);
 
-  const navigate =useNavigate()
+  const navigate = useNavigate()
   let signInError;
   if (loading || gLoading || updating) {
     return <Loading></Loading>
@@ -35,15 +35,15 @@ const SignUp = () => {
 
   // }
 
-  const onSubmit =async data => {
+  const onSubmit = async data => {
     // console.log(data);
     await createUserWithEmailAndPassword(data.email, data.password)
-    await updateProfile({ displayName:data.name });
+    await updateProfile({ displayName: data.name });
     // console.log('update ok')
-    
+
   }
-    return (
-        <div className='flex h-screen justify-center items-center'>
+  return (
+    <div className='flex h-screen justify-center items-center'>
       <div className="card w-96 bg-base-100 shadow-xl">
         <div className="card-body">
           <h2 className="text-center text-2xl font-bold">SignUp!</h2>
@@ -62,13 +62,13 @@ const SignUp = () => {
                     value: true,
                     message: 'Name is Required'
                   },
-                 
+
                 })}
               />
 
               <label className="label">
                 {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
-               
+
 
 
               </label>
@@ -143,7 +143,7 @@ const SignUp = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default SignUp;

@@ -29,8 +29,9 @@ const Users = () => {
     <tbody>
       
       {
-          users.map(user=><UsersRow
+          users.map((user,index)=><UsersRow
          key={user._id}
+         index={index}
          user={user}
          refetch={refetch}
           ></UsersRow>)
