@@ -9,7 +9,7 @@ const Business = () => {
 
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body">
-                <i className="fa-brands fa-adversal"></i>
+                    <h1>All Country</h1>
                     <p>We Served 100+ customars</p>
 
                 </div>
@@ -17,7 +17,7 @@ const Business = () => {
             </div>
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body">
-                    <h2 className="text-center">Card title!</h2>
+                    <h2 className="text-center">Our Best Tools!</h2>
                     <p>50+ Tools</p>
 
                 </div>
@@ -25,7 +25,7 @@ const Business = () => {
             </div>
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body">
-                    <h2 className="text-center">Card title!</h2>
+                    <h2 className="text-center">Best Reviews!</h2>
                     <p>33k Reviews</p>
 
                 </div>
